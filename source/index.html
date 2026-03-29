@@ -12,21 +12,24 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="logo" href="/" aria-label="На главную">
+    <a class="logo link" href="/" aria-label="На главную">
       <picture>
-        <source type="image/webp" media="(min-width: 768px)" srcset="images/logo-tablet@1x.webp 1x, images/logo-tablet@2x.webp 2x">
         <source type="image/webp" srcset="images/logo@1x.webp 1x, images/logo@2x.webp 2x">
         <img src="images/logo@2x.png" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x" alt="Berry Shop" width="80" height="40">
       </picture>
     </a>
-    <button class="menu-btn" type="button" popovertarget="mobile-menu" popovertargetaction="show" aria-label="Открыть меню">☰</button>
+    <button class="menu-btn menu-btn--open btn" type="button" popovertarget="mobile-menu" popovertargetaction="show" aria-label="Открыть меню">
+      <span class="menu-btn__icon"></span>
+    </button>
+    <button class="menu-btn btn menu-btn--close" type="button" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Закрыть меню">
+      <span class="menu-btn__icon"></span>
+    </button>
     <nav class="menu-mobile" id="mobile-menu" popover="auto" aria-label="Мобильное меню">
-      <button class="menu-close" type="button" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Закрыть меню">×</button>
-      <ul>
-        <li><a href="#catalog">Каталог</a></li>
-        <li><a href="#news">Новости</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-        <li><a href="#order">Заказать</a></li>
+      <ul class="menu-mobile__list">
+        <li><a class="link" href="#catalog">Каталог</a></li>
+        <li><a class="link" href="#news">Новости</a></li>
+        <li><a class="link" href="#contacts">Контакты</a></li>
+        <li><a class="link" href="#order">Заказать</a></li>
       </ul>
     </nav>
   </header>

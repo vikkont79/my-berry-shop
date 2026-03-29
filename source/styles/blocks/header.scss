@@ -1,5 +1,131 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  position: fixed;
+  inset: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--indent-7) var(--indent-5);
+  padding-block: var(--base-indent);
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+  box-shadow: var(--shadow-base);
 }
+
+.logo {
+  display: block;
+
+  & img {
+    display: block;
+  }
+}
+
+.menu-btn {
+  position: relative;
+  inline-size: 60px;
+  block-size: 60px;
+  padding: 0;
+
+  &:focus-visible {
+    outline: transparent;
+  }
+}
+
+.menu-btn__icon {
+  display: block;
+  position: absolute;
+}
+
+.menu-btn--open .menu-btn__icon {
+  left: 10px;
+  inline-size: 40px;
+  block-size: 5px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-green-dark);
+  transition: background-color var(--transition-base);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    inline-size: 40px;
+    block-size: 5px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-green-dark);
+    transition: background-color  var(--transition-base);
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+}
+
+.menu-btn--close .menu-btn__icon {
+  left: 12px;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inline-size: 36px;
+    block-size: 3px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-green-dark);
+    transition: background-color  var(--transition-base);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.menu-btn:is(:hover, :focus, :focus-visible, :active) .menu-btn__icon,
+.menu-btn:is(:hover, :focus, :focus-visible, :active) .menu-btn__icon::before,
+.menu-btn:is(:hover, :focus, :focus-visible, :active) .menu-btn__icon::after {
+  background-color: var(--color-green-bright);
+}
+
+.menu-btn--close {
+  display: none;
+}
+
+.header:has(#mobile-menu:popover-open) .menu-btn--open {
+  display: none;
+}
+
+.header:has(#mobile-menu:popover-open) .menu-btn--close {
+  display: block;
+}
+
+.menu-mobile {
+  inset: 72px 0 auto;
+  inline-size: 100%;
+  padding-inline: 40px;
+  padding-block: 32px;
+  border: 0;
+  background-color: var(--color-bg-alt);
+}
+
+.menu-mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent-8);
+  margin-block: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+  font-size: var(--font-size-lg);
+  text-align: start;
+}
+
+
+
+
