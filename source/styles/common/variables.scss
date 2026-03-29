@@ -1,1 +1,66 @@
-/* здесь используйте глобальные переменные */
+:root {
+  /* ----- ЦВЕТА ----- */
+  /* Фоны */
+  --color-bg: #FBFCFE;           /* Основной фон */
+  --color-bg-alt: #F1F6FC;       /* Альтернативный фон (секции) */
+  --color-bg-overlay: #8E9892;   /* Серый фон (70% opacity) */
+
+  /* Акценты */
+  --color-primary: #6A107A;      /* Фиолетовый (кнопки, заголовки) */
+  --color-accent: #0F805D;       /* Бирюзовый (акценты) */
+
+  /* Текст */
+  --color-text: #000000;         /* Основной текст */
+  --color-text-light: #FBFCFE;   /* Белый текст */
+  --color-text-muted: #8E9892;   /* Вторичный текст (70% opacity) */
+
+  /* Сопутствующие */
+  --color-purple-bright: #B22EC8;    /* Яркий фиолетовый */
+  --color-purple-dark: #6A107A;      /* Тёмный фиолетовый */
+  --color-green-bright: #7BDB0A;     /* Яркий зелёный */
+  --color-green-dark: #0F805D;             /* Бирюзовый (50%) */
+  --color-red: #FF8282;              /* Красный/розовый (ошибки) */
+
+  /* ----- ТИПОГРАФИКА ----- */
+  --font-family-base: "Raleway", sans-serif;      /* Основной текст */
+  --font-family-display: "Comfortaa", sans-serif; /* Заголовки, логотип */
+
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.75rem;     /* 28px */
+  --font-size-xxl: 2.25rem;    /* 36px */
+  --font-size-3xl: 3rem;       /* 48px */
+  --font-size-4xl: 3.25rem;    /* 52px */
+
+
+
+
+  /* ----- ОТСТУПЫ (4px сетка) ----- */
+  --base-indent: 0.25rem;
+
+  --indent-2: calc(var(--base-indent) * 2);    /* 8px */
+  --indent-3: calc(var(--base-indent) * 3);    /* 12px */
+  --indent-4: calc(var(--base-indent) * 4);    /* 16px */
+  --indent-5: calc(var(--base-indent) * 5);    /* 20px */
+  --indent-6: calc(var(--base-indent) * 6);    /* 24px */
+  --indent-7: calc(var(--base-indent) * 7);    /* 28px */
+  --indent-8: calc(var(--base-indent) * 8);    /* 32px */
+
+
+  /* ----- РАДИУСЫ ----- */
+  --radius-btn: 1.25rem;             /* Кнопки, 20px */
+  --radius-card: 20px;             /* Карточки товаров/новостей */
+  --radius-sm: 0.75rem;               /* Мелкие элементы */
+
+  /* ----- ТЕНИ ----- */
+  --shadow-base: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+  --shadow-card: 0 5px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+  /* ----- АНИМАЦИЯ ----- */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+}
+
