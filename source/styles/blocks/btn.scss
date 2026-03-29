@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: var(--radius-btn);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color var(--transition-base);
+}
+
+.btn--primary {
+  background-color: var(--color-purple-dark);
+  color: var(--color-text-light);
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--color-purple-bright);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
