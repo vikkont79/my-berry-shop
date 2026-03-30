@@ -11,6 +11,8 @@
 }
 
 .btn--primary {
+  inline-size: 100%;
+  padding-block: var(--indent-4);
   background-color: var(--color-purple-dark);
   color: var(--color-text-light);
 

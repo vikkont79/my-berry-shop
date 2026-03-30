@@ -1,0 +1,47 @@
+.catalog {
+  padding-block-start: 60px;
+  margin-block-end: 60px;
+}
+
+.catalog__title {
+  margin-block: 0 60px;
+  font-size: var(--font-size-xxl);
+}
+
+.catalog__list {
+  display: grid;
+  gap: var(--indent-6);
+  margin-block: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.card {
+  padding-block-end: 54px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.card__image {
+  inline-size: 320px;
+  block-size: 180px;
+}
+
+.card__title {
+  margin-block: var(--indent-7);
+  color: var(--color-green-dark);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+}
+
+.card__price {
+  margin-block: 0 38px;
+  font-size: var(--font-size-md);
+}
+
+.card__btn {
+  max-inline-size: 220px;
+}
+
+

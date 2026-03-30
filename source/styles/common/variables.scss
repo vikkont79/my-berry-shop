@@ -3,7 +3,7 @@
   /* Фоны */
   --color-bg: #FBFCFE;           /* Основной фон */
   --color-bg-alt: #F1F6FC;       /* Альтернативный фон (секции) */
-  --color-bg-overlay: #8E9892;   /* Серый фон (70% opacity) */
+  --color-bg-overlay: rgba(142,152,146,0.7);   /* Серый фон (70% opacity) */
 
   /* Акценты */
   --color-primary: #6A107A;      /* Фиолетовый (кнопки, заголовки) */
@@ -51,13 +51,14 @@
 
   /* ----- РАДИУСЫ ----- */
   --radius-btn: 1.25rem;             /* Кнопки, 20px */
-  --radius-card: 20px;             /* Карточки товаров/новостей */
+  --radius-card: 2.5rem;             /* Карточки товаров/новостей, 40px */
   --radius-sm: 0.75rem;               /* Мелкие элементы */
 
   /* ----- ТЕНИ ----- */
   --shadow-base: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
-  --shadow-card: 0 5px 20px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0px 4px 4px 0px rgba(88, 13, 101, 0.15);
   --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+
 
   /* ----- АНИМАЦИЯ ----- */
   --transition-fast: 150ms ease-in-out;

@@ -1,0 +1,25 @@
+.pickup {
+  padding-block-start: var(--indent-8);
+}
+
+.pickup__title {
+  margin-block: 72px 70px;
+  font-size: var(--font-size-xxl);
+}
+
+.pickup__text {
+  margin-block: 0 34px;
+}
+
+.pickup__contacts {
+  padding-block-end: var(--indent-3);
+  font-size: var(--font-size-sm);
+  font-style: normal;
+  text-align: start;
+
+  & p {
+    margin-block: 0 var(--indent-3);
+    padding-inline-start: 36px;
+    padding-block: 6px;
+  }
+}
