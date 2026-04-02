@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent-5);
+  margin-block: 0;
+  padding-inline-start: 0;
+  padding-block: var(--indent-2) var(--indent-5);
+  list-style-type: none;
+}
+
+.socials__item {
+  inline-size: var(--indent-8);
+  block-size: var(--indent-8);
+}
+
+.socials__link {
+  display: block;
+  inline-size: var(--indent-8);
+  block-size: var(--indent-8);
+  background-color: var(--color-green-dark);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.socials__link--tg {
+  mask-image: url("../../icons/telegram.svg");
+}
+
+.socials__link--vk {
+  mask-image: url("../../icons/vkontakte.svg");
+}
+
+.socials__link--yt {
+  mask-image: url("../../icons/youtube.svg");
+}

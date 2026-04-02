@@ -14,8 +14,8 @@
   <header class="header">
     <a class="logo link" href="/" aria-label="На главную">
       <picture>
-        <source type="image/webp" srcset="images/logo@1x.webp 1x, images/logo@2x.webp 2x">
-        <img src="images/logo@2x.png" srcset="images/logo@1x.png 1x, images/logo@2x.png 2x" alt="Berry Shop" width="80" height="40">
+        <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="135" height="60">
+        <img src="images/logo-mob.svg" alt="Berry Shop" width="52" height="52">
       </picture>
     </a>
     <button class="menu-btn menu-btn--open btn" type="button" popovertarget="mobile-menu" popovertargetaction="show" aria-label="Открыть меню">
@@ -181,14 +181,33 @@
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0aff82e7e0c58d43f033f9357b7fcf4b286f524f022e191fa0a83950609770de&amp;source=constructor" width="100%" height="372" frameborder="0" title="Карта проезда до магазина Berry Shop"></iframe>
     </section>
   </main>
-  <footer>
-    <div class="footer-logo">🍇</div>
-    <nav class="social-links">
-      <a href="#">VK</a>
-      <a href="#">TG</a>
-      <a href="#">WA</a>
-    </nav>
-    <p>HTML Academy © 2022</p>
+  <footer class="footer wrapper">
+    <a class="logo link" href="/" aria-label="На главную">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="135" height="60">
+        <img src="images/logo-mob.svg" alt="Berry Shop" width="52" height="52">
+      </picture>
+    </a>
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в Телеграме.</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в ВКонтакте.</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в Ютубе.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+      <span class="visually-hidden">Логотип HTML Academy.</span>
+    </a>
   </footer>
 </body>
 

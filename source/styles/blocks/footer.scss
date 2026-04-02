@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: var(--indent-3) var(--indent-5);
+  background-color: var(--color-bg-alt);
+}
+
+.footer__socials {
+  margin-inline-start: auto;
+}
+
+.footer__copyright {
+  display: block;
+  min-inline-size: 110px;
+  min-block-size: 24px;
+  margin-inline-start: auto;
+  background-color: var(--color-text);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  mask-image: url("../../icons/developer.svg");
+}
+
