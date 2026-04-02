@@ -1,4 +1,5 @@
 .pickup {
+  margin-block-end: 60px;
   padding-block-start: var(--indent-8);
 }
 
@@ -12,6 +13,7 @@
 }
 
 .pickup__contacts {
+  padding-inline: var(--indent-6);
   padding-block-end: var(--indent-3);
   font-size: var(--font-size-sm);
   font-style: normal;
