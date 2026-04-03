@@ -1,40 +1,38 @@
 :root {
   /* ----- ЦВЕТА ----- */
   /* Фоны */
-  --color-bg: #FBFCFE;           /* Основной фон */
-  --color-bg-alt: #F1F6FC;       /* Альтернативный фон (секции) */
-  --color-bg-overlay: rgba(142,152,146,0.7);   /* Серый фон (70% opacity) */
+  --color-bg: #fbfcfe;           /* Основной фон */
+  --color-bg-alt: #f1f6fc;       /* Альтернативный фон (секции) */
+  --color-bg-overlay: rgba(142, 152, 146, 0.7);   /* Серый фон (70% opacity) */
 
   /* Акценты */
-  --color-primary: #6A107A;      /* Фиолетовый (кнопки, заголовки) */
-  --color-accent: #0F805D;       /* Бирюзовый (акценты) */
+  --color-primary: #6a107a;      /* Фиолетовый (кнопки, заголовки) */
+  --color-accent: #0f805d;       /* Бирюзовый (акценты) */
 
   /* Текст */
   --color-text: #000000;         /* Основной текст */
-  --color-text-light: #FBFCFE;   /* Белый текст */
-  --color-text-muted: #8E9892;   /* Вторичный текст (70% opacity) */
+  --color-text-light: #fbfcfe;   /* Белый текст */
+  --color-text-muted: #8e9892;   /* Вторичный текст (70% opacity) */
 
   /* Сопутствующие */
-  --color-purple-bright: #B22EC8;    /* Яркий фиолетовый */
-  --color-purple-dark: #6A107A;      /* Тёмный фиолетовый */
-  --color-green-bright: #7BDB0A;     /* Яркий зелёный */
-  --color-green-dark: #0F805D;             /* Бирюзовый (50%) */
-  --color-red: #FF8282;              /* Красный/розовый (ошибки) */
+  --color-purple-bright: #b22ec8;    /* Яркий фиолетовый */
+  --color-purple-dark: #6a107a;      /* Тёмный фиолетовый */
+  --color-green-bright: #7bdb0a;     /* Яркий зелёный */
+  --color-green-dark: #0f805d;             /* Бирюзовый (50%) */
+  --color-red: #ff8282;              /* Красный/розовый (ошибки) */
 
   /* ----- ТИПОГРАФИКА ----- */
   --font-family-base: "Raleway", sans-serif;      /* Основной текст */
   --font-family-display: "Comfortaa", sans-serif; /* Заголовки, логотип */
 
-  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-sm: 0.88rem;    /* 14px */
   --font-size-base: 1rem;      /* 16px */
-  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-md: 1.13rem;    /* 18px */
   --font-size-lg: 1.25rem;     /* 20px */
   --font-size-xl: 1.75rem;     /* 28px */
   --font-size-xxl: 2.25rem;    /* 36px */
   --font-size-3xl: 3rem;       /* 48px */
   --font-size-4xl: 3.25rem;    /* 52px */
-
-
 
 
   /* ----- ОТСТУПЫ (4px сетка) ----- */
@@ -64,4 +62,3 @@
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
 }
-
