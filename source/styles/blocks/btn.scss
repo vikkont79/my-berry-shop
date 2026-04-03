@@ -1,13 +1,19 @@
 .btn {
   display: inline-block;
   border: none;
-  border-radius: var(--radius-btn);
+  border-radius: var(--radius-card);
   background-color: transparent;
   font-family: inherit;
   font-size: var(--font-size-lg);
   line-height: 1;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color var(--transition-base);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-xl);
+    line-height: 34px;
+  }
 }
 
 .btn--primary {

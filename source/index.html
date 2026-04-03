@@ -36,13 +36,28 @@
   </header>
   <main>
     <section class="features wrapper">
-      <h1 class="features__title title">Ягоды с доставкой</h1>
-      <ul class="features__list">
-        <li class="features__item">Отборные ягоды</li>
-        <li class="features__item">Натуральный вкус, сохранён методом шоковой заморозки</li>
-        <li class="features__item">Доставка по Санкт-Петербургу</li>
-      </ul>
-      <a class="features__btn btn btn--primary" href="#order">Заказать</a>
+      <div class="features__content">
+        <h1 class="features__title title">Ягоды с доставкой</h1>
+        <ul class="features__list">
+          <li class="features__item features__item--best">Отборные ягоды</li>
+          <li class="features__item features__item--ice">Натуральный вкус, сохранён методом шоковой заморозки</li>
+          <li class="features__item features__item--delivery">Доставка по Санкт-Петербургу</li>
+        </ul>
+        <a class="features__btn btn btn--primary" href="#order">Заказать</a>
+      </div>
+      <picture>
+        <!-- Десктоп -->
+        <source media="(min-width: 1024px)" type="image/webp" srcset="images/hero-bg@1x.webp 1x, images/hero-bg@2x.webp 2x">
+
+        <!-- Планшет -->
+        <source media="(min-width: 768px)" type="image/webp" srcset="images/hero-bg-tablet@1x.webp 1x, images/hero-bg-tablet@2x.webp 2x">
+
+        <!-- Мобилка (по умолчанию) -->
+        <source type="image/webp" srcset="images/hero-bg-mob@1x.webp 1x, images/hero-bg-mob@2x.webp 2x">
+
+        <!-- PNG фолбэк -->
+        <img class="features__image" src="images/hero-bg-mob@2x.png" srcset="images/hero-bg-mob@1x.png 1x, images/hero-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="640">
+      </picture>
     </section>
 
     <section class="catalog wrapper">

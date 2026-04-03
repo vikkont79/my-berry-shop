@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   inset: 0 0 auto;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +109,8 @@
 
 .menu-mobile {
   min-block-size: 360px;
-  inset: 72px 0 auto;
+  inset: 68px 0 auto;
+  z-index: 3;
   inline-size: 100%;
   padding-inline: 40px;
   padding-block: 32px;
