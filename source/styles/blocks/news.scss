@@ -1,19 +1,54 @@
 .news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent-6);
   padding-block-start: var(--indent-8);
   font-size: var(--font-size-sm);
+  background-image: url("../../icons/twigs.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 228px 32px;
+
+  @media (min-width: 768px) {
+    column-gap: var(--indent-3);
+    background-size: 296px 42px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: auto max-content 1fr auto;
+  }
 }
 
 .news__title {
-  margin-block: 64px;
+  flex-basis: 100%;
+  margin-block: 64px 40px;
   font-size: var(--font-size-xxl);
+
+  @media (min-width: 768px) {
+    margin-block: 72px 48px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: 1/-1;
+    margin-block: 98px 74px;
+  }
 }
 
 .news__card {
+  max-inline-size: 268px;
   min-block-size: 400px;
-}
 
-.news__card:not(:last-of-type) {
-  margin-block-end: var(--indent-6);
+  @media (min-width: 768px) {
+    max-inline-size: 348px;
+    min-block-size: 492px;
+  }
+
+  @media (min-width: 1440px) {
+    max-inline-size: 360px;
+  }
 }
 
 .news-card {
@@ -23,22 +58,58 @@
   padding-block: var(--indent-8) var(--indent-6);
   border: 2px var(--color-green-dark) solid;
   border-radius: var(--radius-card);
+  background-image: url("../../icons/twig.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom var(--indent-6);
+  background-size: 76px 32px;
+
+  @media (min-width: 768px) {
+    padding-inline: 36px;
+    padding-block-end: 42px;
+    background-position: center bottom 42px;
+    background-size: 96px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-row: 2/-1;
+    grid-template-rows: subgrid;
+  }
 }
 
 .news-card__title {
+  min-block-size: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-block: 0 var(--indent-5);
   padding-inline: var(--indent-3);
   color: var(--color-text);
   font-size: var(--font-size-lg);
+
+  @media (min-width: 768px) {
+    min-block-size: 100px;
+    margin-block-end: var(--indent-6);
+    padding-inline: 0;
+    font-size: var(--font-size-xl);
+  }
 }
 
 .news-card__content {
   margin-block: 0;
   text-align: start;
+
+  @media (min-width: 768px) {
+    line-height: 20px;
+  }
 }
 
 .news-card__date {
   margin-block-start: auto;
   padding-block-end: 48px;
   text-align: end;
+
+  @media (min-width: 768px) {
+    padding-block-end: 64px;
+  }
 }
