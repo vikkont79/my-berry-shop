@@ -3,14 +3,16 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--indent-6);
+  margin-block-end: 60px;
   padding-block-start: var(--indent-8);
-  font-size: var(--font-size-sm);
   background-image: url("../../icons/twigs.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 228px 32px;
+  font-size: var(--font-size-sm);
 
   @media (min-width: 768px) {
+    margin-block-end: 100px;
     column-gap: var(--indent-3);
     background-size: 296px 42px;
   }
@@ -29,11 +31,13 @@
 
   @media (min-width: 768px) {
     margin-block: 72px 48px;
+    font-size: var(--font-size-3xl);
   }
 
   @media (min-width: 1440px) {
     grid-column: 1/-1;
     margin-block: 98px 74px;
+    font-size: var(--font-size-4xl);
   }
 }
 
