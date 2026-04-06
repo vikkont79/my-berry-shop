@@ -3,10 +3,20 @@
   flex-wrap: wrap;
   padding-block: var(--indent-3) var(--indent-5);
   background-color: var(--color-bg-alt);
+
+  @media (min-width: 768px) {
+    align-items: center;
+    padding-block: var(--indent-6);
+  }
 }
 
 .footer__socials {
   margin-inline-start: auto;
+  margin-block: var(--indent-2) var(--indent-5);
+
+  @media (min-width: 768px) {
+    margin-block: auto;
+  }
 }
 
 .footer__copyright {
@@ -19,4 +29,19 @@
   mask-position: center;
   mask-size: contain;
   mask-image: url("../../icons/developer.svg");
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--color-green-bright);
+  }
+
+  &:active {
+    background-color: var(--color-green-dark);
+  }
+
+  @media (min-width: 768px) {
+    inline-size: 153px;
+    block-size: 32px;
+  }
 }
