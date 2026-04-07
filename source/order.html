@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ягоды с доставкой | Berry Shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicons/favicon.png">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="logo link" href="/" aria-label="На главную">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="135" height="60">
+        <img src="images/logo-mob.svg" alt="Berry Shop" width="52" height="52">
+      </picture>
+    </a>
+    <button class="menu-btn menu-btn--open btn" type="button" popovertarget="mobile-menu" popovertargetaction="show" aria-label="Открыть меню">
+      <span class="menu-btn__icon"></span>
+    </button>
+    <button class="menu-btn btn menu-btn--close" type="button" popovertarget="mobile-menu" popovertargetaction="hide" aria-label="Закрыть меню">
+      <span class="menu-btn__icon"></span>
+    </button>
+    <nav class="menu-mobile" id="mobile-menu" popover="auto" aria-label="Мобильное меню">
+      <ul class="menu-mobile__list">
+        <li><a class="link" href="#catalog">Каталог</a></li>
+        <li><a class="link" href="#news">Новости</a></li>
+        <li><a class="link" href="#contacts">Контакты</a></li>
+        <li><a class="link" href="#order">Заказать</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <picture>
+        <source media="(min-width: 1440px)" type="image/webp" srcset="images/order-bg@1x.webp 1x, images/order-bg@2x.webp 2x" width="1440" height="200">
+        <source media="(min-width: 768px)" type="image/webp" srcset="images/order-bg-tablet@1x.webp 1x, images/order-bg-tablet@2x.webp 2x" width="768" height="200">
+        <source type="image/webp" srcset="images/order-bg-mob@1x.webp 1x, images/order-bg-mob@2x.webp 2x" width="320" height="120">
+
+        <img class="intro__image" src="images/order-bg-mob@2x.png" srcset="images/order-bg-mob@1x.png 1x, images/order-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="120">
+      </picture>
+      <div class="intro__content wrapper">
+        <h1 class="visually-hidden">Страница заказа ягод</h1>
+        <h2 class="intro__title title">Закажи ягоды</h2>
+        <p class="intro__text">
+          Мы соберем для вас ягоды
+          и доставим их в удобном
+          для вас виде - свежими или замороженными
+        </p>
+      </div>
+    </section>
+    <section class="order wrapper">
+      <h1 class="order__title title">Оформление заказа</h1>
+
+      <form class="order__form" action="#" method="post">
+
+        <!-- Блок 1: Выберите ягоды -->
+        <fieldset class="order__group">
+          <legend class="order__title title">Выберите ягоды</legend>
+          <div class="order__list">
+            <label><input type="checkbox" name="berry" value="lingonberry"> Брусника</label>
+            <label><input type="checkbox" name="berry" value="cranberry"> Клюква</label>
+            <label><input type="checkbox" name="berry" value="cherry"> Вишня</label>
+            <label><input type="checkbox" name="berry" value="raspberry"> Малина</label>
+            <label><input type="checkbox" name="berry" value="blueberry"> Голубика</label>
+            <label><input type="checkbox" name="berry" value="strawberry"> Морошка</label>
+            <label><input type="checkbox" name="berry" value="blackberry"> Ежевика</label>
+            <label><input type="checkbox" name="berry" value="chokeberry"> Черника</label>
+            <label><input type="checkbox" name="berry" value="strawberry_garden"> Клубника</label>
+            <label><input type="checkbox" name="berry" value="cloudberry"> Клёква</label>
+          </div>
+        </fieldset>
+
+        <!-- Блок 2: Вид хранения -->
+        <fieldset class="order__group">
+          <legend class="order__legend">Вид хранения</legend>
+          <label>
+            <input type="checkbox" name="storage" value="fresh"> Свежие ягоды
+          </label>
+          <label>
+            <input type="checkbox" name="storage" value="frozen"> Замороженные ягоды
+          </label>
+          <label>
+            <input type="checkbox" name="storage" value="mix"> Ягодные миксы
+          </label>
+        </fieldset>
+
+        <!-- Блок 3: Способ доставки -->
+        <fieldset class="order__group">
+          <legend class="order__legend">Способ доставки</legend>
+
+          <label>
+            <input type="radio" name="delivery" value="courier" checked>
+            <span>Доставка</span>
+            <small>По СПб в пределах КАД</small>
+          </label>
+
+          <label>
+            <input type="radio" name="delivery" value="pickup">
+            <span>Самовывоз</span>
+            <small>(Набережная Обводного канала, 101)</small>
+          </label>
+        </fieldset>
+
+        <!-- Блок 4: Ваши контакты -->
+        <fieldset class="order__group">
+          <legend class="order__legend">Ваши контакты</legend>
+
+          <label for="name">Имя *</label>
+          <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 xxx xxx xx xx" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Ваш email">
+
+          <label for="address">Адрес</label>
+          <input type="text" id="address" name="address" placeholder="Адрес в Санкт-Петербурге">
+        </fieldset>
+
+        <!-- Блок 5: Пожелания -->
+        <div class="order__group">
+          <label for="comments">Пожелания к заказу</label>
+          <textarea id="comments" name="comments" rows="5" placeholder="Чем мы можем вам помочь?"></textarea>
+        </div>
+
+        <!-- Кнопка -->
+        <button class="order__btn btn btn--primary" type="submit">Заказать</button>
+
+      </form>
+    </section>
+    <section class="pickup">
+      <div class="pickup__content wrapper">
+        <h2 class="pickup__title title">Где забрать ягоды?</h2>
+        <p class="pickup__text">Забери ягоды с нашего склада по адресу:</p>
+        <address class="pickup__contacts">
+          <a class="pickup__link link" href="https://yandex.ru/maps/-/CPbmm-m7" target="_blank" rel="noopener noreferrer">
+            <span class="pickup__icon pickup__icon--address" aria-hidden="true"></span>
+            <span>Набережная Обводного канала, 101</span>
+          </a>
+          <a class="pickup__link link" href="tel:+79119244118">
+            <span class="pickup__icon pickup__icon--phone" aria-hidden="true"></span>
+            <span>+7 911 924 41 18</span>
+          </a>
+          <a class="pickup__link link" href="mailto:info@yagoda.ru">
+            <span class="pickup__icon pickup__icon--email" aria-hidden="true"></span>
+            <span>info@yagoda.ru</span>
+          </a>
+        </address>
+      </div>
+
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0aff82e7e0c58d43f033f9357b7fcf4b286f524f022e191fa0a83950609770de&amp;source=constructor" title="Карта проезда до магазина Berry Shop"></iframe>
+    </section>
+  </main>
+  <footer class="footer wrapper">
+    <a class="logo link" href="/" aria-label="На главную">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="135" height="60">
+        <img src="images/logo-mob.svg" alt="Berry Shop" width="52" height="52">
+      </picture>
+    </a>
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в Телеграме.</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в ВКонтакте.</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link socials__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">Мы в Ютубе.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+      <span class="visually-hidden">Логотип HTML Academy.</span>
+    </a>
+  </footer>
+</body>
+
+</html>
