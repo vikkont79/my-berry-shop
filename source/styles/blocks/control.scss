@@ -1,0 +1,85 @@
+.control {
+  display: flex;
+  align-items: center;
+  gap: var(--indent-3);
+  cursor: pointer;
+
+  &:has(input:checked) .control__icon {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.control__mark {
+  flex-shrink: 0;
+  border: 2px var(--color-green-dark) solid;
+  border-radius: 5px;
+}
+
+.control:has(input[type="checkbox"]) .control__mark {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.control:has(input[type="radio"]) .control__mark {
+  inline-size: 21px;
+  block-size: 21px;
+  border-radius: 50%;
+}
+
+.control__icon {
+  display: inline-block;
+  background-color: var(--color-green-dark);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  opacity: 0;
+  scale: 0.5;
+  transition: opacity var(--transition-base);
+}
+
+.control:has(input[type="checkbox"]) .control__icon {
+  inline-size: 20px;
+  block-size: 20px;
+  mask-image: url("../../icons/checkbox.svg");
+  mask-size: 14px 11px;
+}
+
+.control:has(input[type="radio"]) .control__icon {
+  inline-size: 17px;
+  block-size: 17px;
+  mask-image: url("../../icons/dot.svg");
+  mask-size: 9px;
+}
+
+
+.control__label {
+  text-transform: lowercase;
+  text-align: start;
+}
+
+.control:hover .control__mark {
+  border-color: var(--color-green-bright);
+}
+
+.control:hover .control__icon {
+  background-color: var(--color-green-bright);
+}
+
+.control:has(input:focus-visible) .control__mark {
+  border-color: var(--color-green-bright);
+}
+
+.control:has(input:focus-visible) .control__icon {
+  background-color: var(--color-green-bright);
+}
+
+.control:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.control:has(input:disabled) .control__mark {
+  border-color: var(--color-text-muted);
+}
+
+
