@@ -1,0 +1,49 @@
+.order {
+  padding-block-start: 50px;
+  background-image: url("../../icons/twigs.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 228px 32px;
+}
+
+.order__form {
+  margin-block-end: 90px;
+}
+
+.order__group {
+  margin-inline: 0;
+  margin-block-start: var(--indent-8);
+  padding-inline: 0;
+  padding-block: var(--indent-8) 0;
+  border: none;
+}
+
+.order__title {
+  font-size: var(--font-size-lg);
+  text-align: start;
+}
+
+.order__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--indent-8);
+  margin-block: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.order__list--berries {
+  max-block-size: 304px;
+}
+
+.order__list--storage {
+  gap: var(--indent-6);
+}
+
+.order__btn {
+  margin-block-start: var(--indent-5);
+}
+
+
