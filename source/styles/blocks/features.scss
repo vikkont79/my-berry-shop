@@ -6,7 +6,7 @@
 
   @media (min-width: 768px) {
     min-block-size: 924px;
-     margin-block-start: 104px;
+    margin-block-start: 104px;
     padding-block-start: 142px;
   }
 
@@ -36,8 +36,9 @@
 }
 
 .features__title {
-  margin-block: 0 var(--indent-8);
+  margin-block: 0 38px;
   font-size: var(--font-size-xxl);
+  line-height: 40px;
 
   @media (min-width: 768px) {
     margin-block-end: 48px;
@@ -55,10 +56,10 @@
   max-inline-size: 208px;
   display: flex;
   flex-direction: column;
-  gap: var(--indent-3);
-  margin-block: 0 58px;
+  gap: 17px;
+  margin-block: 0 62px;
   padding-inline-start: 0;
-  line-height: 22px;
+  line-height: 20px;
   list-style-type: none;
 
   @media (min-width: 768px) {

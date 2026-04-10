@@ -4,7 +4,7 @@
   justify-content: center;
   gap: var(--indent-6);
   margin-block-end: 60px;
-  padding-block-start: var(--indent-8);
+  padding-block-start: 36px;
   background-image: url("../../icons/twigs.svg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -26,7 +26,7 @@
 
 .news__title {
   flex-basis: 100%;
-  margin-block: 64px 40px;
+  margin-block: 64px 42px;
   font-size: var(--font-size-xxl);
 
   @media (min-width: 768px) {
@@ -58,8 +58,8 @@
 .news-card {
   display: flex;
   flex-direction: column;
-  padding-inline: var(--indent-5);
-  padding-block: var(--indent-8) var(--indent-6);
+  padding-inline: 17px;
+  padding-block: var(--indent-8) var(--indent-5);
   border: 2px var(--color-green-dark) solid;
   border-radius: var(--radius-card);
   background-image: url("../../icons/twig.svg");
@@ -88,7 +88,6 @@
   align-items: center;
   margin-block: 0 var(--indent-5);
   padding-inline: var(--indent-3);
-  color: var(--color-text);
   font-size: var(--font-size-lg);
 
   @media (min-width: 768px) {
@@ -102,6 +101,7 @@
 .news-card__content {
   margin-block: 0;
   text-align: start;
+  line-height: 16px;
 
   @media (min-width: 768px) {
     line-height: 20px;
