@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <title>Ягоды с доставкой | Berry Shop</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <meta name="description" content="Свежие и замороженные ягоды с доставкой по Санкт-Петербургу. Отборные ягоды, шоковая заморозка, удобная доставка. Закажите ягоды прямо сейчас!">
+  <link rel="preload" href="/fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/favicon.png">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -50,8 +51,7 @@
         <source media="(min-width: 768px)" type="image/webp" srcset="images/hero-bg-tablet@1x.webp 1x, images/hero-bg-tablet@2x.webp 2x" width="768" height="924">
         <source type="image/webp" srcset="images/hero-bg-mob@1x.webp 1x, images/hero-bg-mob@2x.webp 2x" width="320" height="640">
 
-        <!-- PNG фолбэк -->
-        <img class="features__image" src="images/hero-bg-mob@2x.png" srcset="images/hero-bg-mob@1x.png 1x, images/hero-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="640">
+        <img class="features__image" src="images/hero-bg-mob@2x.png" srcset="images/hero-bg-mob@1x.png 1x, images/hero-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="640" fetchpriority=high>
       </picture>
     </section>
 
@@ -62,8 +62,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/raspberry@1x.webp 1x, images/raspberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/raspberry@2x.png" srcset="images/raspberry@1x.png 1x, images/raspberry@2x.png 2x" width="320" height="180" alt="Малина" loading="lazy">
+              <source type="image/webp" srcset="images/raspberry@1x.webp 1x, images/raspberry@2x.webp 2x" width="268" height="183">
+              <img class="card__image" src="images/raspberry@2x.png" srcset="images/raspberry@1x.png 1x, images/raspberry@2x.png 2x" width="268" height="183" alt="Малина" loading="lazy">
             </picture>
             <h3 class="card__title">Малина</h3>
             <p class="card__price">350₽ за 1 кг</p>
@@ -74,8 +74,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/blackberry@1x.webp 1x, images/blackberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/blackberry@2x.png" srcset="images/blackberry@1x.png 1x, images/blackberry@2x.png 2x" width="320" height="180" alt="Ежевика" loading="lazy">
+              <source type="image/webp" srcset="images/blackberry@1x.webp 1x, images/blackberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/blackberry@2x.png" srcset="images/blackberry@1x.png 1x, images/blackberry@2x.png 2x" width="268" height="180" alt="Ежевика" loading="lazy">
             </picture>
             <h3 class="card__title">Ежевика</h3>
             <p class="card__price">550 ₽ за 1 кг</p>
@@ -86,8 +86,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/lingonberry@1x.webp 1x, images/lingonberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/lingonberry@2x.png" srcset="images/lingonberry@1x.png 1x, images/lingonberry@2x.png 2x" width="320" height="180" alt="Брусника" loading="lazy">
+              <source type="image/webp" srcset="images/lingonberry@1x.webp 1x, images/lingonberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/lingonberry@2x.png" srcset="images/lingonberry@1x.png 1x, images/lingonberry@2x.png 2x" width="268" height="180" alt="Брусника" loading="lazy">
             </picture>
             <h3 class="card__title">Брусника</h3>
             <p class="card__price">390 ₽ за 1 кг</p>
@@ -98,8 +98,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/strawberry@1x.webp 1x, images/strawberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/strawberry@2x.png" srcset="images/strawberry@1x.png 1x, images/strawberry@2x.png 2x" width="320" height="180" alt="Клубника" loading="lazy">
+              <source type="image/webp" srcset="images/strawberry@1x.webp 1x, images/strawberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/strawberry@2x.png" srcset="images/strawberry@1x.png 1x, images/strawberry@2x.png 2x" width="268" height="180" alt="Клубника" loading="lazy">
             </picture>
             <h3 class="card__title">Клубника</h3>
             <p class="card__price">450 ₽ за 1 кг</p>
@@ -110,8 +110,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/cherry@1x.webp 1x, images/cherry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/cherry@2x.png" srcset="images/cherry@1x.png 1x, images/cherry@2x.png 2x" width="320" height="180" alt="Вишня" loading="lazy">
+              <source type="image/webp" srcset="images/cherry@1x.webp 1x, images/cherry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/cherry@2x.png" srcset="images/cherry@1x.png 1x, images/cherry@2x.png 2x" width="268" height="180" alt="Вишня" loading="lazy">
             </picture>
             <h3 class="card__title">Вишня</h3>
             <p class="card__price">375 ₽ за 1 кг</p>
@@ -122,8 +122,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/gooseberry@1x.webp 1x, images/gooseberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/gooseberry@2x.png" srcset="images/gooseberry@1x.png 1x, images/gooseberry@2x.png 2x" width="320" height="180" alt="Крыжовник" loading="lazy">
+              <source type="image/webp" srcset="images/gooseberry@1x.webp 1x, images/gooseberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/gooseberry@2x.png" srcset="images/gooseberry@1x.png 1x, images/gooseberry@2x.png 2x" width="268" height="180" alt="Крыжовник" loading="lazy">
             </picture>
             <h3 class="card__title">Крыжовник</h3>
             <p class="card__price">300 ₽ за 1 кг</p>
@@ -134,8 +134,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/blueberry@1x.webp 1x, images/blueberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/blueberry@2x.png" srcset="images/blueberry@1x.png 1x, images/blueberry@2x.png 2x" width="320" height="180" alt="Голубика" loading="lazy">
+              <source type="image/webp" srcset="images/blueberry@1x.webp 1x, images/blueberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/blueberry@2x.png" srcset="images/blueberry@1x.png 1x, images/blueberry@2x.png 2x" width="268" height="180" alt="Голубика" loading="lazy">
             </picture>
             <h3 class="card__title">Голубика</h3>
             <p class="card__price">510 ₽ за 1 кг</p>
@@ -146,8 +146,8 @@
         <li>
           <article class="card">
             <picture>
-              <source type="image/webp" srcset="images/cranberry@1x.webp 1x, images/cranberry@2x.webp 2x" width="320" height="180">
-              <img class="card__image" src="images/cranberry@2x.png" srcset="images/cranberry@1x.png 1x, images/cranberry@2x.png 2x" width="320" height="180" alt="Клюква" loading="lazy">
+              <source type="image/webp" srcset="images/cranberry@1x.webp 1x, images/cranberry@2x.webp 2x" width="268" height="180">
+              <img class="card__image" src="images/cranberry@2x.png" srcset="images/cranberry@1x.png 1x, images/cranberry@2x.png 2x" width="268" height="180" alt="Клюква" loading="lazy">
             </picture>
             <h3 class="card__title">Клюква</h3>
             <p class="card__price">320 ₽ за 1 кг</p>
@@ -199,7 +199,7 @@
         </address>
       </div>
 
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0aff82e7e0c58d43f033f9357b7fcf4b286f524f022e191fa0a83950609770de&amp;source=constructor" title="Карта проезда до магазина Berry Shop"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0aff82e7e0c58d43f033f9357b7fcf4b286f524f022e191fa0a83950609770de&amp;source=constructor" title="Карта проезда до магазина Berry Shop" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="footer wrapper">
