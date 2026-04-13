@@ -16,4 +16,10 @@
   &:active {
     color: var(--color-green-dark);
   }
+
+  &[aria-current="page"] {
+    color: var(--color-green-dark);
+    pointer-events: none;
+    cursor: default;
+  }
 }
