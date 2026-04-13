@@ -42,6 +42,7 @@
 
   @media (min-width: 1440px) {
     max-inline-size: 792px;
+    margin-block-start: 44px;
   }
 }
 
@@ -69,6 +70,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (min-width: 1024px) {
+    padding-block-start: 4px;
+  }
 }
 
 .order__list--berries {
@@ -83,6 +88,7 @@
   @media (min-width: 1024px) {
     grid-template-rows: repeat(2, auto);
     column-gap: 48px;
+    padding-block-end: 20px;
   }
 }
 
@@ -94,13 +100,15 @@
     grid-auto-flow: column;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+    margin-block-start: 0;
   }
 
   @media (min-width: 1024px) {
-    max-inline-size: 660px;
+    max-inline-size: 644px;
     grid-template-rows: auto;
     grid-template-columns: repeat(3, auto);
     column-gap: 48px;
+    padding-block-end: 8px;
   }
 }
 
@@ -119,6 +127,10 @@
   @media (min-width: 1024px) {
     grid-template-columns: 255px 355px;
     gap: 48px;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -129,7 +141,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--indent-6);
     margin-block-start: 48px;
-    padding-block-start: 42px;
+    padding-block-start: 40px;
   }
 
   @media (min-width: 768px) {
@@ -140,6 +152,12 @@
 
   @media (min-width: 1024px) {
     margin-inline-start: 0;
+    margin-block-start: 52px;
+    padding-block-start: 50px;
+
+    & .order__title {
+      text-align: start;
+    }
   }
 }
 
@@ -156,6 +174,10 @@
 
   & input {
     min-block-size: 88px;
+
+    @media (min-width: 768px) {
+    min-block-size: 52px;
+  }
   }
 }
 
@@ -181,11 +203,13 @@
 
   @media (min-width: 768px) {
     max-inline-size: 336px;
+    min-block-size: 64px;
     margin-block-start: var(--indent-7);
   }
 
   @media (min-width: 1024px) {
     margin-block-start: 36px;
+    min-block-size: 68px;
   }
 }
 

@@ -65,6 +65,14 @@
 
 .pickup__title--order {
   margin-block-start: 60px;
+
+  @media (min-width: 768px) {
+    margin-block-start: 76px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-block-start: 0;
+  }
 }
 
 .pickup__text {

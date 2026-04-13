@@ -8,6 +8,11 @@
   &:has(input:disabled) {
     opacity: 0.7;
   }
+
+  @media (min-width: 768px) {
+    gap: var(--base-indent);
+    margin-block-end: var(--indent-3);
+  }
 }
 
 .field__input {
