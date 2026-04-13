@@ -15,7 +15,7 @@
   @media (min-width: 1024px) {
     max-inline-size: 1124px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 552px 1fr;
     margin-inline: auto;
     padding-block-start: 142px;
   }
@@ -40,6 +40,7 @@
   }
 
   @media (min-width: 1024px) {
+    max-inline-size: 888px;
     order: 2;
   }
 }
@@ -52,11 +53,13 @@
   @media (min-width: 768px) {
     margin-block-end: 72px;
     font-size: var(--font-size-3xl);
+    line-height: 54px;
   }
 
   @media (min-width: 1024px) {
     margin-block-start: 0;
     font-size: var(--font-size-4xl);
+    line-height: 58px;
   }
 }
 
@@ -66,9 +69,14 @@
   line-height: 18px;
 
   @media (min-width: 768px) {
-    margin-block-end: var(--indent-5);
+    margin-block-end: var(--indent-6);
     padding-inline: 0;
     font-size: var(--font-size-lg);
+  }
+
+   @media (min-width: 1024px) {
+    padding-inline-start: 98px;
+    text-align: start;
   }
 }
 
@@ -76,20 +84,27 @@
   padding-inline: var(--base-indent);
   padding-block-end: var(--indent-3);
   font-size: var(--font-size-sm);
+  line-height: 16px;
   font-style: normal;
   text-align: start;
 
   @media (min-width: 768px) {
     padding-inline: 0;
-    padding-block-end: 40px;
+    padding-block-end: var(--indent-7);
     font-size: var(--font-size-base);
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline-start: 98px;
+    padding-block-end: 0;
+    text-align: start;
   }
 }
 
 .pickup__link {
   display: flex;
   align-items: center;
-  gap: var(--indent-2);
+  gap: var(--base-indent);
   margin-block-end: var(--indent-3);
 
   &:hover,
@@ -115,6 +130,7 @@
   display: inline-block;
   inline-size: 32px;
   block-size: 32px;
+  flex-shrink: 0;
   background-color: var(--color-text);
   mask-repeat: no-repeat;
   mask-position: center;

@@ -8,6 +8,15 @@
   @media (min-width: 768px) {
     align-items: center;
     padding-block: var(--indent-6);
+
+    & img {
+      inline-size: 135px;
+      block-size: 60px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding-inline: 158px;
   }
 }
 
@@ -44,5 +53,10 @@
   @media (min-width: 768px) {
     inline-size: 153px;
     block-size: 32px;
+    margin-inline-start: 106px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-inline-start: 308px;
   }
 }

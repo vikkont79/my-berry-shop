@@ -51,6 +51,11 @@
   & span {
     color: var(--color-red);
   }
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-base);
+    line-height: var(--font-size-lg);
+  }
 }
 
 .field__label--error {

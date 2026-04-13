@@ -12,8 +12,9 @@
   font-size: var(--font-size-sm);
 
   @media (min-width: 768px) {
-    margin-block-end: 100px;
-    column-gap: var(--indent-3);
+    margin-block-end: 112px;
+    column-gap: var(--indent-4);
+    row-gap: 30px;
     background-size: 296px 42px;
   }
 
@@ -21,6 +22,10 @@
     display: grid;
     grid-template-columns: repeat(3, 360px);
     grid-template-rows: auto max-content 1fr auto;
+    column-gap: 22px;
+    row-gap: var(--indent-6);
+    margin-block-end: 102px;
+    padding-block-start: 40px;
   }
 }
 
@@ -30,7 +35,7 @@
   font-size: var(--font-size-xxl);
 
   @media (min-width: 768px) {
-    margin-block: 72px 48px;
+    margin-block: 82px 46px;
     font-size: var(--font-size-3xl);
   }
 
@@ -38,6 +43,7 @@
     grid-column: 1/-1;
     margin-block: 98px 74px;
     font-size: var(--font-size-4xl);
+    line-height: 58px;
   }
 }
 
@@ -47,7 +53,7 @@
 
   @media (min-width: 768px) {
     max-inline-size: 348px;
-    min-block-size: 492px;
+    min-block-size: 494px;
   }
 
   @media (min-width: 1440px) {
@@ -68,10 +74,11 @@
   background-size: 76px 32px;
 
   @media (min-width: 768px) {
-    padding-inline: 36px;
+    padding-inline: 34px;
     padding-block-end: 42px;
     background-position: center bottom 42px;
     background-size: 96px 40px;
+    font-size: var(--font-size-base);
   }
 
   @media (min-width: 1440px) {
@@ -96,6 +103,11 @@
     margin-block-end: var(--indent-6);
     padding-inline: 0;
     font-size: var(--font-size-xl);
+    line-height: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-block-end: 0;
   }
 }
 
@@ -110,6 +122,7 @@
 
   @media (min-width: 1440px) {
     font-size: var(--font-size-base);
+    padding-block-end: 26px;
   }
 }
 

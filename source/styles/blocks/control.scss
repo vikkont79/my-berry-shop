@@ -55,6 +55,11 @@
 .control__label {
   text-transform: lowercase;
   text-align: start;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-md);
+    line-height: 22px;
+  }
 }
 
 .control:hover .control__mark {

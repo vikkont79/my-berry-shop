@@ -4,6 +4,10 @@
   gap: var(--indent-5);
   padding-inline-start: 0;
   list-style-type: none;
+
+  @media (min-width: 768px) {
+    gap: var(--indent-8);
+  }
 }
 
 .socials__item {

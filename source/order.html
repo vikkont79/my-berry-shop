@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <title>Ягоды с доставкой | Berry Shop</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <meta name="description" content="Свежие и замороженные ягоды с доставкой по Санкт-Петербургу. Отборные ягоды, шоковая заморозка, удобная доставка. Закажите ягоды прямо сейчас!">
+  <link rel="preload" href="/fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicons/favicon.png">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -41,7 +42,7 @@
         <source media="(min-width: 768px)" type="image/webp" srcset="images/order-bg-tablet@1x.webp 1x, images/order-bg-tablet@2x.webp 2x" width="768" height="200">
         <source type="image/webp" srcset="images/order-bg-mob@1x.webp 1x, images/order-bg-mob@2x.webp 2x" width="320" height="120">
 
-        <img class="intro__image" src="images/order-bg-mob@2x.png" srcset="images/order-bg-mob@1x.png 1x, images/order-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="120">
+        <img class="intro__image" src="images/order-bg-mob@2x.png" srcset="images/order-bg-mob@1x.png 1x, images/order-bg-mob@2x.png 2x" alt="Свежие ягоды с доставкой" width="320" height="120" fetchpriority=high>
       </picture>
       <div class="intro__content wrapper">
         <h1 class="visually-hidden">Страница заказа ягод</h1>
@@ -56,10 +57,10 @@
     <section class="order wrapper">
       <h2 class="visually-hidden">Оформление заказа</h2>
 
-      <form class="order__form" action="#" method="post">
+      <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
 
         <fieldset class="order__group">
-          <legend class="order__title title">Выберите ягоды</legend>
+          <legend class="order__title">Выберите ягоды</legend>
           <ul class="order__list order__list--berries">
             <li class="order__item">
               <label class="control">
@@ -155,7 +156,7 @@
         </fieldset>
 
         <fieldset class="order__group">
-          <legend class="order__title title">Вид хранения</legend>
+          <legend class="order__title">Вид хранения</legend>
           <ul class="order__list order__list--storage">
             <li class="order__item">
               <label class="control">
@@ -188,8 +189,8 @@
         </fieldset>
 
         <fieldset class="order__group">
-          <legend class="order__title title">Способ доставки</legend>
-          <ul class="order__list">
+          <legend class="order__title">Способ доставки</legend>
+          <ul class="order__list order__list--delivery">
             <li class="order__item">
               <label class="control">
                 <input class="visually-hidden" type="radio" name="delivery" value="courier" checked>
@@ -211,29 +212,29 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order__group">
-          <legend class="order__title title">Ваши контакты</legend>
-          <label class="field">
+        <fieldset class="order__group order__group--contacts contacts">
+          <legend class="order__title">Ваши контакты</legend>
+          <label class="contacts__field--name field">
             <span class="field__label">Имя<span> *</span></span>
             <input class="field__input" type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
             <span class="field__label field__label--error" aria-live="polite">Введите имя</span>
           </label>
-          <label class="field">
+          <label class="contacts__field--phone field">
             <span class="field__label">Телефон<span> *</span></span>
             <input class="field__input" type="tel" id="phone" name="phone" placeholder="+7 xxx xxx xx xx" required>
             <span class="field__label field__label--error" aria-live="polite">Введите телефон</span>
           </label>
-          <label class="field">
+          <label class="contacts__field--emale field">
             <span class="field__label">Email<span> *</span></span>
             <input class="field__input" type="email" id="email" name="email" placeholder="Ваш email" required>
             <span class="field__label field__label--error" aria-live="polite">Введите email</span>
           </label>
-          <label class="field">
+          <label class="contacts__field--address field">
             <span class="field__label">Адрес<span> *</span></span>
             <input class="field__input" type="text" id="address" name="address" placeholder="Адрес в Санкт-Петербурге" required>
             <span class="field__label field__label--error" aria-live="polite">Введите адрес</span>
           </label>
-          <label class="field">
+          <label class="contacts__field--comments field">
             <span class="field__label">Пожелания к заказу</span>
             <textarea class="field__input field__input--comments" id="comments" name="comments" rows="6" placeholder="Чем мы можем вам помочь?"></textarea>
           </label>
