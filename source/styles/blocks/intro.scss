@@ -18,9 +18,10 @@
 }
 
 .intro__title {
-  margin-block: 64px var(--indent-8);
+  margin-block: 64px 32px;
   padding-inline: var(--indent-5);
   font-size: var(--font-size-xxl);
+  line-height: 40px;
 
   @media (min-width: 768px) {
     margin-block: 100px 52px;
@@ -36,6 +37,7 @@
 .intro__text {
   margin-block: 0 40px;
   padding-inline: var(--indent-7);
+  line-height: 20px;
 
   @media (min-width: 768px) {
     max-inline-size: 532px;
