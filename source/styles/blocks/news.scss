@@ -1,8 +1,4 @@
 .news {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--indent-6);
   margin-block-end: 60px;
   padding-block-start: 36px;
   background-image: url("../../icons/twigs.svg");
@@ -19,31 +15,44 @@
   }
 
   @media (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: auto max-content 1fr auto;
-    column-gap: 22px;
-    row-gap: var(--indent-6);
     margin-block-end: 102px;
     padding-block-start: 40px;
   }
 }
 
 .news__title {
-  flex-basis: 100%;
-  margin-block: 64px 42px;
+  margin-block: 64px 66px;
   font-size: var(--font-size-xxl);
 
   @media (min-width: 768px) {
-    margin-block: 82px 46px;
+    margin-block: 82px 72px;
     font-size: var(--font-size-3xl);
   }
 
   @media (min-width: 1440px) {
     grid-column: 1/-1;
-    margin-block: 98px 74px;
+    margin-block: 98px 98px;
     font-size: var(--font-size-4xl);
     line-height: 58px;
+  }
+}
+
+.news__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--indent-6);
+
+  @media (min-width: 768px) {
+    column-gap: var(--indent-4);
+    row-gap: 34px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 22px;
+    row-gap: var(--indent-6);
   }
 }
 
@@ -67,7 +76,7 @@
   padding-inline: 17px;
   padding-block: var(--indent-8) var(--indent-5);
   border: 2px var(--color-green-dark) solid;
-  border-radius: var(--radius-card);
+  border-radius: var(--radius--base);
   background-image: url("../../icons/twig.svg");
   background-repeat: no-repeat;
   background-position: center bottom var(--indent-6);
@@ -79,12 +88,6 @@
     background-position: center bottom 42px;
     background-size: 96px 40px;
     font-size: var(--font-size-base);
-  }
-
-  @media (min-width: 1440px) {
-    display: grid;
-    grid-row: 2/-1;
-    grid-template-rows: subgrid;
   }
 }
 
@@ -104,10 +107,6 @@
     padding-inline: 0;
     font-size: var(--font-size-xl);
     line-height: 32px;
-  }
-
-  @media (min-width: 1440px) {
-    margin-block-end: 0;
   }
 }
 
